@@ -1,0 +1,6 @@
+# Simple memory management library with smalloc(), scalloc(), srealloc(), and sfree().
+# I don't know best, or even particularly good, practices, so I wouldn't use this.
+# It has not been tested, and it will not be tested, because it isn't meant to be used.
+# Uses x86-64 assembly for sbrk() and memory block management (for fun).
+# Uses NASM.
+# Run `make` to produce a static object, and `make clean` to remove the build files and static object
