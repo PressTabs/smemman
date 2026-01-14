@@ -5,9 +5,9 @@ OBJ_DIR = obj
 
 CC = gcc
 ASM = nasm
-C_FLAGS = -Wall -Wextra -fPIC -c
+C_FLAGS = -Wall -Wextra -fPIC -flto -O2 -c
 ASM_FLAGS = -felf64
-LD_FLAGS = -shared
+LD_FLAGS = -shared -flto -O2
 
 C_SRCS = $(wildcard $(SRC_DIR)/*.c)
 ASM_SRCS = $(wildcard $(SRC_DIR)/*.s)
